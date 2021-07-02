@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const documentos = require("./routes/documentos");
+// const documentos = require("./routes/documentos");
 const solicitudesDocumentos = require("./routes/solicitudesDocumentos");
 
 const app = express();
@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
+// app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
 
 app.use(
   "/hradb-a-mongodb/documentos-pacientes/solicitudes",

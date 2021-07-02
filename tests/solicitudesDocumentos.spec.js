@@ -3,7 +3,7 @@ const app = require("../api/index");
 const mongoose = require("mongoose");
 const SolicitudesDocumentos = require("../api/models/SolicitudesDocumentos");
 const solicitudesDocumentosSeed = require("../api/testSeeds/solicitudesDocumentosSeed.json");
-const muchasSolicitudesDocumentosSeed = require("../api/testSeeds/muchasSolicitudesDocumentos.json");
+const muchasSolicitudesDocumentosSeed = require("../api/testSeeds/muchasSolicitudesDocumentosSeed.json");
 
 const request = supertest(app);
 
@@ -41,7 +41,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body).toBe([]);
+      expect(response.body).toEqual([]);
     });
 
     it("Should get pending solicitudes documentos", async () => {
@@ -62,6 +62,8 @@ describe("Endpoints solicitudes documentos", () => {
     });
 
     it("Should get at most 100 solicitudes documentos", async () => {
+      await SolicitudesDocumentos.deleteMany();
+      await SolicitudesDocumentos.create(muchasSolicitudesDocumentosSeed);
       const response = await request
         .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
         .set("Authorization", token);
@@ -75,9 +77,10 @@ describe("Endpoints solicitudes documentos", () => {
       expect(
         response.body.filter((solicitud) => solicitud.enviadaHospital).length
       ).toBe(0);
-      expect(solicitudesActualizadas.length).toBe(140);
+      expect(solicitudesActualizadas.length).toBe(128);
     });
   });
+
   describe("Update solicitud documento status and add correlativoCita", () => {
     it("Should not update solicitud documento without token", async () => {
       const newSolicitudDocumento = await SolicitudesDocumentos.create({
@@ -113,8 +116,8 @@ describe("Endpoints solicitudes documentos", () => {
           respondida: true,
         });
 
-      expect(response.status).toBe(404);
-      expect(response.body.respuesta).toBe("Solicitud no encontrada.");
+      expect(response.status).toBe(204);
+      expect(response.body).toEqual({});
     });
 
     it("Should update state of solicitud documento", async () => {
