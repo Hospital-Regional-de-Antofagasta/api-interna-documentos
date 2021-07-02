@@ -16,4 +16,10 @@ router.put(
   solicitudesDocumentosController.updateStateSolicitudesDocumentos
 );
 
+router.get(
+  "/no-respondidas",
+  isAuthenticated,
+  solicitudesDocumentosController.getSentNotRespondedSolicitudesDocumentos
+);
+
 module.exports = router;

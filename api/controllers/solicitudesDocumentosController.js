@@ -16,7 +16,7 @@ exports.getNotSentSolicitudesDocumentos = async (req, res) => {
     res.status(200).send(solicitudes);
   } catch (error) {
     res.status(500).send({
-      respuesta: `Solicitud documentos get: ${error.name} - ${error.message}`,
+      respuesta: `Solicitud documentos get no enviadas: ${error.name} - ${error.message}`,
     });
   }
 };
@@ -32,6 +32,22 @@ exports.updateStateSolicitudesDocumentos = async (req, res) => {
   } catch (error) {
     res.status(500).send({
       respuesta: `Solicitud documentos update: ${error.name} - ${error.message}`,
+    });
+  }
+};
+
+exports.getSentNotRespondedSolicitudesDocumentos = async (req, res) => {
+  try {
+    const filter = { enviadaHospital: true, respondida: false };
+    const solicitudes = await SolicitudesDocumentos.find(filter)
+      .sort({ createdAt: 1 })
+      .limit(100)
+      .exec();
+
+    res.status(200).send(solicitudes);
+  } catch (error) {
+    res.status(500).send({
+      respuesta: `Solicitud documentos get enviadas no respondidas: ${error.name} - ${error.message}`,
     });
   }
 };

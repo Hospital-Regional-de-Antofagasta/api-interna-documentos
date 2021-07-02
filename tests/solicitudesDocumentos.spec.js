@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const SolicitudesDocumentos = require("../api/models/SolicitudesDocumentos");
 const solicitudesDocumentosSeed = require("../api/testSeeds/solicitudesDocumentosSeed.json");
 const muchasSolicitudesDocumentosSeed = require("../api/testSeeds/muchasSolicitudesDocumentosSeed.json");
+const muchasSolicitudesDocumentosNoRespondidasSeed = require("../api/testSeeds/muchasSolicitudesDocumentosNoRespondidasSeed.json");
 
 const request = supertest(app);
 
@@ -25,7 +26,7 @@ afterEach(async () => {
 
 describe("Endpoints solicitudes documentos", () => {
   describe("Get pending solicitudes documentos", () => {
-    it("Should not get documentos without token", async () => {
+    it("Should not get solicitudes documentos without token", async () => {
       const response = await request
         .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
         .set("Authorization", "no-token");
@@ -34,7 +35,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
 
-    it("Should get no documentos from empty database", async () => {
+    it("Should get no solicitudes documentos from empty database", async () => {
       await SolicitudesDocumentos.deleteMany();
       const response = await request
         .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
@@ -147,6 +148,49 @@ describe("Endpoints solicitudes documentos", () => {
 
       expect(solicitudDocumentoActualizada.correlativoSolicitud).toBe(789);
       expect(solicitudDocumentoActualizada.respondida).toBeTruthy();
+    });
+  });
+
+  describe("Get solicitudes documentos enviadas y no respondidas", () => {
+    it("Should not get solicitudes documentos without token", async () => {
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
+        .set("Authorization", "no-token");
+
+      expect(response.status).toBe(401);
+      expect(response.body.respuesta).toBe("Acceso no autorizado.");
+    });
+
+    it("Should get no solicitudes documentos from empty database", async () => {
+      await SolicitudesDocumentos.deleteMany();
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
+        .set("Authorization", token);
+
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual([]);
+    });
+
+    it("Should get solicitudes documentos enviadas y no respondidas", async () => {
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
+        .set("Authorization", token);
+
+      expect(response.status).toBe(200);
+      expect(response.body.length).toBe(1);
+    });
+
+    it("Should get at most 100 solicitudes documentos enviadas y no respondidas", async () => {
+      await SolicitudesDocumentos.deleteMany();
+      await SolicitudesDocumentos.create(
+        muchasSolicitudesDocumentosNoRespondidasSeed
+      );
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
+        .set("Authorization", token);
+
+      expect(response.status).toBe(200);
+      expect(response.body.length).toBe(100);
     });
   });
 });
