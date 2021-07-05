@@ -28,7 +28,9 @@ describe("Endpoints solicitudes documentos", () => {
   describe("Get pending solicitudes documentos", () => {
     it("Should not get solicitudes documentos without token", async () => {
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
+        .get(
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+        )
         .set("Authorization", "no-token");
 
       expect(response.status).toBe(401);
@@ -38,59 +40,82 @@ describe("Endpoints solicitudes documentos", () => {
     it("Should get no solicitudes documentos from empty database", async () => {
       await SolicitudesDocumentos.deleteMany();
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
+        .get(
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+        )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
     });
 
-    it("Should get pending solicitudes documentos", async () => {
+    it("Should get all solicitudes documentos", async () => {
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
+        .get(
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes"
+        )
         .set("Authorization", token);
 
-      const solicitudesActualizadas = await SolicitudesDocumentos.find({
-        enviadaHospital: true,
-      });
+      expect(response.status).toBe(200);
+      expect(response.body.length).toBe(5);
+    });
+
+    it("Should get pending solicitudes documentos", async () => {
+      const response = await request
+        .get(
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+        )
+        .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(3);
-      expect(
-        response.body.filter((solicitud) => solicitud.enviadaHospital).length
-      ).toBe(0);
-      expect(solicitudesActualizadas.length).toBe(5);
     });
 
-    it("Should get at most 100 solicitudes documentos", async () => {
+    it("Should get solicitudes documentos in progress", async () => {
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=EN_PROCESO")
+        .set("Authorization", token);
+
+      expect(response.status).toBe(200);
+      expect(response.body.length).toBe(1);
+    });
+
+    it("Should get at most 100 solicitudes documentos in progress", async () => {
       await SolicitudesDocumentos.deleteMany();
       await SolicitudesDocumentos.create(muchasSolicitudesDocumentosSeed);
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-enviadas")
+        .get(
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+        )
         .set("Authorization", token);
-
-      const solicitudesActualizadas = await SolicitudesDocumentos.find({
-        enviadaHospital: true,
-      });
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(100);
-      expect(
-        response.body.filter((solicitud) => solicitud.enviadaHospital).length
-      ).toBe(0);
-      expect(solicitudesActualizadas.length).toBe(128);
+    });
+
+    it("Should get at most 100 solicitudes documentos en proceso", async () => {
+      await SolicitudesDocumentos.deleteMany();
+      await SolicitudesDocumentos.create(
+        muchasSolicitudesDocumentosNoRespondidasSeed
+      );
+      const response = await request
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=EN_PROCESO")
+        .set("Authorization", token);
+
+      expect(response.status).toBe(200);
+      expect(response.body.length).toBe(100);
     });
   });
 
-  describe("Update solicitud documento status and add correlativoCita", () => {
+  describe("Update solicitud documento", () => {
     it("Should not update solicitud documento without token", async () => {
       const newSolicitudDocumento = await SolicitudesDocumentos.create({
-        correlativoSolicitud: null,
+        correlativoSolicitud: 0,
+        anio: 0,
         numeroPaciente: 123,
         correlativoDocumento: 456,
         tipoDocumento: "DAU",
-        respondida: false,
-        enviadaHospital: false,
+        estado: "EN_PROCESO",
       });
       const response = await request
         .put(
@@ -99,7 +124,11 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", "no-token")
         .send({
           correlativoSolicitud: 789,
-          respondida: true,
+          anio: 2021,
+          numeroPaciente: 123,
+          correlativoDocumento: 456,
+          tipoDocumento: "DAU",
+          estado: "REALIZADO",
         });
 
       expect(response.status).toBe(401);
@@ -114,31 +143,44 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token)
         .send({
           correlativoSolicitud: 789,
-          respondida: true,
+          anio: 2021,
+          numeroPaciente: 123,
+          correlativoDocumento: 456,
+          tipoDocumento: "DAU",
+          estado: "REALIZADO",
         });
 
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
     });
 
-    it("Should update state of solicitud documento", async () => {
-      const newSolicitudDocumento = await SolicitudesDocumentos.create({
-        correlativoSolicitud: null,
+    it("Should update state of solicitud documento pendiente", async () => {
+      const newContenidoSolicitud = {
+        correlativoSolicitud: 0,
+        anio: 0,
         numeroPaciente: 123,
         correlativoDocumento: 456,
         tipoDocumento: "DAU",
-        respondida: false,
-        enviadaHospital: false,
-      });
+        estado: "PENDIENTE",
+      };
+      const newSolicitudDocumento = await SolicitudesDocumentos.create(
+        newContenidoSolicitud
+      );
+
+      const datosSolicitudActualizar = {
+        correlativoSolicitud: 789,
+        anio: 2021,
+        numeroPaciente: 123,
+        correlativoDocumento: 456,
+        tipoDocumento: "DAU",
+        estado: "EN_PROCESO",
+      };
       const response = await request
         .put(
           `/hradb-a-mongodb/documentos-pacientes/solicitudes/${newSolicitudDocumento._id}`
         )
         .set("Authorization", token)
-        .send({
-          correlativoSolicitud: 789,
-          respondida: true,
-        });
+        .send(datosSolicitudActualizar);
 
       const solicitudDocumentoActualizada =
         await SolicitudesDocumentos.findById(newSolicitudDocumento._id);
@@ -146,51 +188,78 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
 
-      expect(solicitudDocumentoActualizada.correlativoSolicitud).toBe(789);
-      expect(solicitudDocumentoActualizada.respondida).toBeTruthy();
-    });
-  });
-
-  describe("Get solicitudes documentos enviadas y no respondidas", () => {
-    it("Should not get solicitudes documentos without token", async () => {
-      const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
-        .set("Authorization", "no-token");
-
-      expect(response.status).toBe(401);
-      expect(response.body.respuesta).toBe("Acceso no autorizado.");
-    });
-
-    it("Should get no solicitudes documentos from empty database", async () => {
-      await SolicitudesDocumentos.deleteMany();
-      const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
-        .set("Authorization", token);
-
-      expect(response.status).toBe(200);
-      expect(response.body).toEqual([]);
-    });
-
-    it("Should get solicitudes documentos enviadas y no respondidas", async () => {
-      const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
-        .set("Authorization", token);
-
-      expect(response.status).toBe(200);
-      expect(response.body.length).toBe(1);
-    });
-
-    it("Should get at most 100 solicitudes documentos enviadas y no respondidas", async () => {
-      await SolicitudesDocumentos.deleteMany();
-      await SolicitudesDocumentos.create(
-        muchasSolicitudesDocumentosNoRespondidasSeed
+      expect(solicitudDocumentoActualizada.correlativoSolicitud).toBe(
+        datosSolicitudActualizar.correlativoSolicitud
       );
-      const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/no-respondidas")
-        .set("Authorization", token);
+      expect(solicitudDocumentoActualizada.anio).toBe(
+        datosSolicitudActualizar.anio
+      );
+      expect(solicitudDocumentoActualizada.numeroPaciente).toBe(
+        datosSolicitudActualizar.numeroPaciente
+      );
+      expect(solicitudDocumentoActualizada.correlativoDocumento).toBe(
+        datosSolicitudActualizar.correlativoDocumento
+      );
+      expect(solicitudDocumentoActualizada.tipoDocumento).toBe(
+        datosSolicitudActualizar.tipoDocumento
+      );
+      expect(solicitudDocumentoActualizada.estado).toBe(
+        datosSolicitudActualizar.estado
+      );
+    });
 
-      expect(response.status).toBe(200);
-      expect(response.body.length).toBe(100);
+    it("Should update state of solicitud documento en proceso", async () => {
+      const newContenidoSolicitud = {
+        correlativoSolicitud: 789,
+        anio: 2021,
+        numeroPaciente: 123,
+        correlativoDocumento: 456,
+        tipoDocumento: "DAU",
+        estado: "EN_PROCESO",
+      };
+      const newSolicitudDocumento = await SolicitudesDocumentos.create(
+        newContenidoSolicitud
+      );
+
+      const datosSolicitudActualizar = {
+        correlativoSolicitud: 789,
+        anio: 2021,
+        numeroPaciente: 123,
+        correlativoDocumento: 456,
+        tipoDocumento: "DAU",
+        estado: "REALIZADO",
+      };
+      const response = await request
+        .put(
+          `/hradb-a-mongodb/documentos-pacientes/solicitudes/${newSolicitudDocumento._id}`
+        )
+        .set("Authorization", token)
+        .send(datosSolicitudActualizar);
+
+      const solicitudDocumentoActualizada =
+        await SolicitudesDocumentos.findById(newSolicitudDocumento._id);
+
+      expect(response.status).toBe(204);
+      expect(response.body).toEqual({});
+
+      expect(solicitudDocumentoActualizada.correlativoSolicitud).toBe(
+        datosSolicitudActualizar.correlativoSolicitud
+      );
+      expect(solicitudDocumentoActualizada.anio).toBe(
+        datosSolicitudActualizar.anio
+      );
+      expect(solicitudDocumentoActualizada.numeroPaciente).toBe(
+        datosSolicitudActualizar.numeroPaciente
+      );
+      expect(solicitudDocumentoActualizada.correlativoDocumento).toBe(
+        datosSolicitudActualizar.correlativoDocumento
+      );
+      expect(solicitudDocumentoActualizada.tipoDocumento).toBe(
+        datosSolicitudActualizar.tipoDocumento
+      );
+      expect(solicitudDocumentoActualizada.estado).toBe(
+        datosSolicitudActualizar.estado
+      );
     });
   });
 });
