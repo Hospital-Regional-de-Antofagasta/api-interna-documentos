@@ -17,7 +17,7 @@ const SolicitudesDocumentos = mongoose.model(
       correlativoDocumento: Number,
       tipoDocumento: String,
       estado: {
-        // posibles estados: PENDIENTE, EN_PROCESO, REALIZADO
+        // posibles estados: PENDIENTE, EN_PROCESO
         type: String,
         default: "PENDIENTE",
       },

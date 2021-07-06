@@ -207,8 +207,40 @@ describe("Endpoints solicitudes documentos", () => {
         datosSolicitudActualizar.estado
       );
     });
+  });
 
-    it("Should update state of solicitud documento en proceso", async () => {
+  describe("Delete solicitud documento", () => {
+    it("Should not delete solicitud documento without token", async () => {
+      const newSolicitudDocumento = await SolicitudesDocumentos.create({
+        correlativoSolicitud: 789,
+        anio: 2021,
+        numeroPaciente: 123,
+        correlativoDocumento: 456,
+        tipoDocumento: "DAU",
+        estado: "EN_PROCESO",
+      });
+      const response = await request
+        .delete(
+          `/hradb-a-mongodb/documentos-pacientes/solicitudes/${newSolicitudDocumento._id}`
+        )
+        .set("Authorization", "no-token");
+
+      expect(response.status).toBe(401);
+      expect(response.body.respuesta).toBe("Acceso no autorizado.");
+    });
+
+    it("Should not delete solicitud documento if it does not exists", async () => {
+      const response = await request
+        .delete(
+          `/hradb-a-mongodb/documentos-pacientes/solicitudes/60a26ce906ec5a89b4fd6240`
+        )
+        .set("Authorization", token);
+
+      expect(response.status).toBe(204);
+      expect(response.body).toEqual({});
+    });
+
+    it("Should delete solicitud documento en proceso", async () => {
       const newContenidoSolicitud = {
         correlativoSolicitud: 789,
         anio: 2021,
@@ -221,45 +253,18 @@ describe("Endpoints solicitudes documentos", () => {
         newContenidoSolicitud
       );
 
-      const datosSolicitudActualizar = {
-        correlativoSolicitud: 789,
-        anio: 2021,
-        numeroPaciente: 123,
-        correlativoDocumento: 456,
-        tipoDocumento: "DAU",
-        estado: "REALIZADO",
-      };
       const response = await request
-        .put(
+        .delete(
           `/hradb-a-mongodb/documentos-pacientes/solicitudes/${newSolicitudDocumento._id}`
         )
-        .set("Authorization", token)
-        .send(datosSolicitudActualizar);
+        .set("Authorization", token);
 
-      const solicitudDocumentoActualizada =
+      const solicitudDocumentoEliminada =
         await SolicitudesDocumentos.findById(newSolicitudDocumento._id);
 
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
-
-      expect(solicitudDocumentoActualizada.correlativoSolicitud).toBe(
-        datosSolicitudActualizar.correlativoSolicitud
-      );
-      expect(solicitudDocumentoActualizada.anio).toBe(
-        datosSolicitudActualizar.anio
-      );
-      expect(solicitudDocumentoActualizada.numeroPaciente).toBe(
-        datosSolicitudActualizar.numeroPaciente
-      );
-      expect(solicitudDocumentoActualizada.correlativoDocumento).toBe(
-        datosSolicitudActualizar.correlativoDocumento
-      );
-      expect(solicitudDocumentoActualizada.tipoDocumento).toBe(
-        datosSolicitudActualizar.tipoDocumento
-      );
-      expect(solicitudDocumentoActualizada.estado).toBe(
-        datosSolicitudActualizar.estado
-      );
+      expect(solicitudDocumentoEliminada).toBeFalsy();
     });
   });
 });
