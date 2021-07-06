@@ -16,13 +16,26 @@ exports.getSolicitudesDocumentos = async (req, res) => {
   }
 };
 
-exports.updateStateSolicitudesDocumentos = async (req, res) => {
+exports.updateSolicitudesDocumentos = async (req, res) => {
   try {
     const idSolicitud = req.params.idSolicitud;
     const solicitud = req.body;
     const filter = { _id: idSolicitud };
     const update = solicitud;
     await SolicitudesDocumentos.updateOne(filter, update).exec();
+    res.sendStatus(204);
+  } catch (error) {
+    res.status(500).send({
+      respuesta: `Solicitud documentos update: ${error.name} - ${error.message}`,
+    });
+  }
+};
+
+exports.deleteSolicitudesDocumentos = async (req, res) => {
+  try {
+    const idSolicitud = req.params.idSolicitud;
+    const filter = { _id: idSolicitud };
+    await SolicitudesDocumentos.deleteOne(filter).exec();
     res.sendStatus(204);
   } catch (error) {
     res.status(500).send({

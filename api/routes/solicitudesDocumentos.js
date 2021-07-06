@@ -13,7 +13,13 @@ router.get(
 router.put(
   "/:idSolicitud",
   isAuthenticated,
-  solicitudesDocumentosController.updateStateSolicitudesDocumentos
+  solicitudesDocumentosController.updateSolicitudesDocumentos
+);
+
+router.delete(
+  "/:idSolicitud",
+  isAuthenticated,
+  solicitudesDocumentosController.deleteSolicitudesDocumentos
 );
 
 module.exports = router;
