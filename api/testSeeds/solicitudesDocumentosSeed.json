@@ -3,14 +3,15 @@
     "correlativoSolicitud": 1,
     "anio": 2021,
     "numeroPaciente": 1,
-    "correlativoDocumento": 1,
-    "tipoDocumento": "DAU",    "estado": "REALIZADO"
+    "correlativoDocumento": "1",
+    "tipoDocumento": "DAU",
+    "estado": "REALIZADO"
   },
   {
     "correlativoSolicitud": 0,
     "anio": 0,
     "numeroPaciente": 1,
-    "correlativoDocumento": 2,
+    "correlativoDocumento": "2",
     "tipoDocumento": "DAU",
     "estado": "PENDIENTE"
   },
@@ -18,7 +19,7 @@
     "correlativoSolicitud": 0,
     "anio": 0,
     "numeroPaciente": 1,
-    "correlativoDocumento": 1,
+    "correlativoDocumento": "1",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"
   },
@@ -26,7 +27,7 @@
     "correlativoSolicitud": 0,
     "anio": 0,
     "numeroPaciente": 2,
-    "correlativoDocumento": 1,
+    "correlativoDocumento": "1",
     "tipoDocumento": "DAU",
     "estado": "EN_PROCESO"
   },
@@ -34,7 +35,7 @@
     "correlativoSolicitud": 0,
     "anio": 0,
     "numeroPaciente": 1,
-    "correlativoDocumento": 2,
+    "correlativoDocumento": "2",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"
   }
