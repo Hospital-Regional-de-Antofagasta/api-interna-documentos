@@ -113,7 +113,7 @@ describe("Endpoints solicitudes documentos", () => {
         correlativoSolicitud: 0,
         anio: 0,
         numeroPaciente: 123,
-        correlativoDocumento: 456,
+        correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
       });
@@ -126,7 +126,7 @@ describe("Endpoints solicitudes documentos", () => {
           correlativoSolicitud: 789,
           anio: 2021,
           numeroPaciente: 123,
-          correlativoDocumento: 456,
+          correlativoDocumento: "456",
           tipoDocumento: "DAU",
           estado: "REALIZADO",
         });
@@ -145,7 +145,7 @@ describe("Endpoints solicitudes documentos", () => {
           correlativoSolicitud: 789,
           anio: 2021,
           numeroPaciente: 123,
-          correlativoDocumento: 456,
+          correlativoDocumento: "456",
           tipoDocumento: "DAU",
           estado: "REALIZADO",
         });
@@ -159,7 +159,7 @@ describe("Endpoints solicitudes documentos", () => {
         correlativoSolicitud: 0,
         anio: 0,
         numeroPaciente: 123,
-        correlativoDocumento: 456,
+        correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "PENDIENTE",
       };
@@ -171,7 +171,7 @@ describe("Endpoints solicitudes documentos", () => {
         correlativoSolicitud: 789,
         anio: 2021,
         numeroPaciente: 123,
-        correlativoDocumento: 456,
+        correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
       };
@@ -215,7 +215,7 @@ describe("Endpoints solicitudes documentos", () => {
         correlativoSolicitud: 789,
         anio: 2021,
         numeroPaciente: 123,
-        correlativoDocumento: 456,
+        correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
       });
@@ -245,7 +245,7 @@ describe("Endpoints solicitudes documentos", () => {
         correlativoSolicitud: 789,
         anio: 2021,
         numeroPaciente: 123,
-        correlativoDocumento: 456,
+        correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
       };
