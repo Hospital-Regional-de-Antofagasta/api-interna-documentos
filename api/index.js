@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-// app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
+app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
 
 app.use(
   "/hradb-a-mongodb/documentos-pacientes/solicitudes",
