@@ -24,8 +24,8 @@ afterEach(async () => {
 
 const documentoGuardar = {
   numeroPaciente: 1,
-  fecha: "17-07-2021",
-  correlativo: "1",
+  fecha: "2021-07-15",
+  correlativo: "11",
   tipo: "DAU",
 };
 
@@ -55,7 +55,9 @@ describe("Endpoints documentos", () => {
       expect(documentoObtenido.numeroPaciente).toBe(
         documentoGuardar.numeroPaciente
       );
-      expect(documentoObtenido.fecha).toBe(documentoGuardar.fecha);
+      expect(Date.parse(documentoObtenido.fecha)).toBe(
+        Date.parse(documentoGuardar.fecha)
+      );
       expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
       expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
     });
