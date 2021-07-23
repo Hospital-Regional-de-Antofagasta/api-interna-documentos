@@ -1,10 +1,10 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../app");
 const mongoose = require("mongoose");
-const SolicitudesDocumentos = require("../api/models/SolicitudesDocumentos");
-const solicitudesDocumentosSeed = require("../api/testSeeds/solicitudesDocumentosSeed.json");
-const muchasSolicitudesDocumentosSeed = require("../api/testSeeds/muchasSolicitudesDocumentosSeed.json");
-const muchasSolicitudesDocumentosNoRespondidasSeed = require("../api/testSeeds/muchasSolicitudesDocumentosNoRespondidasSeed.json");
+const SolicitudesDocumentos = require("../models/SolicitudesDocumentos");
+const solicitudesDocumentosSeed = require("../testSeeds/solicitudesDocumentosSeed.json");
+const muchasSolicitudesDocumentosSeed = require("../testSeeds/muchasSolicitudesDocumentosSeed.json");
+const muchasSolicitudesDocumentosNoRespondidasSeed = require("../testSeeds/muchasSolicitudesDocumentosNoRespondidasSeed.json");
 
 const request = supertest(app);
 
