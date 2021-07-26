@@ -20,4 +20,8 @@ app.use(
   solicitudesDocumentos
 );
 
+app.use("/v1/hola", (req, res) => {
+  res.status(200).send({ hola: "hola"})
+});
+
 module.exports = app;
