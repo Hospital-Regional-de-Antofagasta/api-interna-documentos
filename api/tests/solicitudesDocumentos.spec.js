@@ -25,94 +25,91 @@ afterEach(async () => {
 });
 
 describe("Endpoints solicitudes documentos", () => {
-  describe("Get pending solicitudes documentos", () => {
+  describe("GET /hradb-a-mongodb/documentos-pacientes/solicitudes/:codigoEstablecimiento?estado", () => {
     it("Should not get solicitudes documentos without token", async () => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=PENDIENTE"
         )
         .set("Authorization", "no-token");
 
       expect(response.status).toBe(401);
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
-
     it("Should get no solicitudes documentos from empty database", async () => {
       await SolicitudesDocumentos.deleteMany();
       const response = await request
         .get(
-          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=PENDIENTE"
         )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
     });
-
     it("Should get all solicitudes documentos", async () => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/documentos-pacientes/solicitudes"
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes/E01"
         )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(5);
     });
-
     it("Should get pending solicitudes documentos", async () => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=PENDIENTE"
         )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(3);
     });
-
     it("Should get solicitudes documentos in progress", async () => {
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=EN_PROCESO")
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=EN_PROCESO")
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(1);
     });
-
     it("Should get at most 100 solicitudes documentos in progress", async () => {
       await SolicitudesDocumentos.deleteMany();
       await SolicitudesDocumentos.create(muchasSolicitudesDocumentosSeed);
       const response = await request
         .get(
-          "/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=PENDIENTE"
+          "/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=PENDIENTE"
         )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(100);
     });
-
     it("Should get at most 100 solicitudes documentos en proceso", async () => {
       await SolicitudesDocumentos.deleteMany();
       await SolicitudesDocumentos.create(
         muchasSolicitudesDocumentosNoRespondidasSeed
       );
       const response = await request
-        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes?estado=EN_PROCESO")
+        .get("/hradb-a-mongodb/documentos-pacientes/solicitudes/E01?estado=EN_PROCESO")
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(100);
     });
   });
-
-  describe("Update solicitud documento", () => {
+  describe("PUT /hradb-a-mongodb/documentos-pacientes/solicitudes/:idSolicitud", () => {
     it("Should not update solicitud documento without token", async () => {
       const newSolicitudDocumento = await SolicitudesDocumentos.create({
         correlativoSolicitud: 0,
         anio: 0,
-        numeroPaciente: 123,
+        numeroPaciente: {
+          numero: 123,
+          codigoEstablecimiento: "E01",
+          nombreEstablecimiento: "Hospital Regional de Antofagasta",
+        },
         correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
@@ -125,7 +122,11 @@ describe("Endpoints solicitudes documentos", () => {
         .send({
           correlativoSolicitud: 789,
           anio: 2021,
-          numeroPaciente: 123,
+          numeroPaciente: {
+            numero: 123,
+            codigoEstablecimiento: "E01",
+            nombreEstablecimiento: "Hospital Regional de Antofagasta",
+          },
           correlativoDocumento: "456",
           tipoDocumento: "DAU",
           estado: "REALIZADO",
@@ -144,7 +145,11 @@ describe("Endpoints solicitudes documentos", () => {
         .send({
           correlativoSolicitud: 789,
           anio: 2021,
-          numeroPaciente: 123,
+          numeroPaciente: {
+            numero: 123,
+            codigoEstablecimiento: "E01",
+            nombreEstablecimiento: "Hospital Regional de Antofagasta",
+          },
           correlativoDocumento: "456",
           tipoDocumento: "DAU",
           estado: "REALIZADO",
@@ -158,7 +163,11 @@ describe("Endpoints solicitudes documentos", () => {
       const newContenidoSolicitud = {
         correlativoSolicitud: 0,
         anio: 0,
-        numeroPaciente: 123,
+        numeroPaciente: {
+          numero: 123,
+          codigoEstablecimiento: "E01",
+          nombreEstablecimiento: "Hospital Regional de Antofagasta",
+        },
         correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "PENDIENTE",
@@ -170,7 +179,11 @@ describe("Endpoints solicitudes documentos", () => {
       const datosSolicitudActualizar = {
         correlativoSolicitud: 789,
         anio: 2021,
-        numeroPaciente: 123,
+        numeroPaciente: {
+          numero: 123,
+          codigoEstablecimiento: "E01",
+          nombreEstablecimiento: "Hospital Regional de Antofagasta",
+        },
         correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
@@ -194,8 +207,14 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitudDocumentoActualizada.anio).toBe(
         datosSolicitudActualizar.anio
       );
-      expect(solicitudDocumentoActualizada.numeroPaciente).toBe(
-        datosSolicitudActualizar.numeroPaciente
+      expect(solicitudDocumentoActualizada.numeroPaciente.numero).toBe(
+        datosSolicitudActualizar.numeroPaciente.numero
+      );
+      expect(solicitudDocumentoActualizada.numeroPaciente.codigoEstablecimiento).toBe(
+        datosSolicitudActualizar.numeroPaciente.codigoEstablecimiento
+      );
+      expect(solicitudDocumentoActualizada.numeroPaciente.nombreEstablecimiento).toBe(
+        datosSolicitudActualizar.numeroPaciente.nombreEstablecimiento
       );
       expect(solicitudDocumentoActualizada.correlativoDocumento).toBe(
         datosSolicitudActualizar.correlativoDocumento
@@ -208,8 +227,7 @@ describe("Endpoints solicitudes documentos", () => {
       );
     });
   });
-
-  describe("Delete solicitud documento", () => {
+  describe("DELETE /hradb-a-mongodb/documentos-pacientes/solicitudes/:idSolicitud", () => {
     it("Should not delete solicitud documento without token", async () => {
       const newSolicitudDocumento = await SolicitudesDocumentos.create({
         correlativoSolicitud: 789,

@@ -23,14 +23,18 @@ afterEach(async () => {
 });
 
 const documentoGuardar = {
-  numeroPaciente: 1,
+  numeroPaciente: {
+    numero: 1,
+    codigoEstablecimiento: "E01",
+    nombreEstablecimiento: "Hospital Regional de Antofagasta",
+  },
   fecha: "2021-07-15",
   correlativo: "11",
   tipo: "DAU",
 };
 
 describe("Endpoints documentos", () => {
-  describe("Create documento", () => {
+  describe("POST /hradb-a-mongodb/documentos-pacientes/", () => {
     it("Should not create documento without token", async () => {
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes/")
@@ -52,8 +56,14 @@ describe("Endpoints documentos", () => {
 
       expect(response.status).toBe(201);
 
-      expect(documentoObtenido.numeroPaciente).toBe(
-        documentoGuardar.numeroPaciente
+      expect(documentoObtenido.numeroPaciente.numero).toBe(
+        documentoGuardar.numeroPaciente.numero
+      );
+      expect(documentoObtenido.numeroPaciente.codigoEstablecimiento).toBe(
+        documentoGuardar.numeroPaciente.codigoEstablecimiento
+      );
+      expect(documentoObtenido.numeroPaciente.nombreEstablecimiento).toBe(
+        documentoGuardar.numeroPaciente.nombreEstablecimiento
       );
       expect(Date.parse(documentoObtenido.fecha)).toBe(
         Date.parse(documentoGuardar.fecha)

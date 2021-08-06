@@ -2,7 +2,12 @@
   {
     "correlativoSolicitud": 1,
     "anio": 2021,
-    "numeroPaciente": 1,
+    "numeroPaciente": 
+      {
+        "numero": 1,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoDocumento": "1",
     "tipoDocumento": "DAU",
     "estado": "REALIZADO"
@@ -10,7 +15,12 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 1,
+    "numeroPaciente": 
+      {
+        "numero": 1,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoDocumento": "2",
     "tipoDocumento": "DAU",
     "estado": "PENDIENTE"
@@ -18,7 +28,12 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 1,
+    "numeroPaciente": 
+      {
+        "numero": 1,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoDocumento": "1",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"
@@ -26,7 +41,12 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 2,
+    "numeroPaciente": 
+      {
+        "numero": 2,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoDocumento": "1",
     "tipoDocumento": "DAU",
     "estado": "EN_PROCESO"
@@ -34,7 +54,12 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 1,
+    "numeroPaciente": 
+      {
+        "numero": 1,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoDocumento": "2",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"

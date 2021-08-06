@@ -3,7 +3,7 @@ const SolicitudesDocumentos = require("../models/SolicitudesDocumentos");
 exports.getSolicitudesDocumentos = async (req, res) => {
   try {
     const { estado } = req.query;
-    const filter = estado ? { estado } : null;
+    const filter = estado ? { estado,'numeroPaciente.codigoEstablecimiento': req.params.codigoEstablecimiento } : {'numeroPaciente.codigoEstablecimiento': req.params.codigoEstablecimiento};
     const solicitudes = await SolicitudesDocumentos.find(filter)
       .sort({ createdAt: 1 })
       .limit(100)
