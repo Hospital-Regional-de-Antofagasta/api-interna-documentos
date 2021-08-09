@@ -37,7 +37,7 @@ describe("Endpoints documentos", () => {
   describe("POST /hradb-a-mongodb/documentos-pacientes/", () => {
     it("Should not create documento without token", async () => {
       const response = await request
-        .post("/hradb-a-mongodb/documentos-pacientes/")
+        .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", "no-token")
         .send(documentoGuardar);
 
@@ -46,7 +46,7 @@ describe("Endpoints documentos", () => {
     });
     it("Should create documento", async () => {
       const response = await request
-        .post("/hradb-a-mongodb/documentos-pacientes/")
+        .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", token)
         .send(documentoGuardar);
 

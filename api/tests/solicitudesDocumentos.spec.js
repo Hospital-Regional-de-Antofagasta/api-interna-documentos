@@ -135,7 +135,6 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.status).toBe(401);
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
-
     it("Should not update solicitud documento if it does not exists", async () => {
       const response = await request
         .put(
@@ -158,7 +157,6 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
     });
-
     it("Should update state of solicitud documento pendiente", async () => {
       const newContenidoSolicitud = {
         correlativoSolicitud: 0,
@@ -246,7 +244,6 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.status).toBe(401);
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
-
     it("Should not delete solicitud documento if it does not exists", async () => {
       const response = await request
         .delete(
@@ -257,7 +254,6 @@ describe("Endpoints solicitudes documentos", () => {
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
     });
-
     it("Should delete solicitud documento en proceso", async () => {
       const newContenidoSolicitud = {
         correlativoSolicitud: 789,
