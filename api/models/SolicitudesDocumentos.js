@@ -14,8 +14,8 @@ const SolicitudesDocumentos = mongoose.model(
         default: 0,
       },
       numeroPaciente: {
-        numero: {type: Number, require: true, unique: true},
-        codigoEstablecimiento: {type: String, require: true, unique: true},
+        numero: {type: Number, require: true},
+        codigoEstablecimiento: {type: String, require: true},
         nombreEstablecimiento: String,
       },
       correlativoDocumento: String,
@@ -27,7 +27,7 @@ const SolicitudesDocumentos = mongoose.model(
       },
     },
     { timestamps: true }
-  ),
+  ).index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true}),
   "solicitudes_documentos"
 );
 
