@@ -12,7 +12,7 @@ const Documentos = mongoose.model(
     fecha: Date,
     correlativo: String,
     tipo: String,
-  }).index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true}),
+  }),//.index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true}),
   "documentos"
 );
 
