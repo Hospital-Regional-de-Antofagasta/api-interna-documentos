@@ -108,6 +108,9 @@ describe("Endpoints solicitudes documentos", () => {
         numeroPaciente: {
           numero: 123,
           codigoEstablecimiento: "E01",
+          hospital: {
+            E01: 1
+          },
           nombreEstablecimiento: "Hospital Regional de Antofagasta",
         },
         correlativoDocumento: "456",
@@ -125,6 +128,9 @@ describe("Endpoints solicitudes documentos", () => {
           numeroPaciente: {
             numero: 123,
             codigoEstablecimiento: "E01",
+            hospital: {
+              E01: 1
+            },
             nombreEstablecimiento: "Hospital Regional de Antofagasta",
           },
           correlativoDocumento: "456",
@@ -147,6 +153,9 @@ describe("Endpoints solicitudes documentos", () => {
           numeroPaciente: {
             numero: 123,
             codigoEstablecimiento: "E01",
+            hospital: {
+              E01: 1
+            },
             nombreEstablecimiento: "Hospital Regional de Antofagasta",
           },
           correlativoDocumento: "456",
@@ -164,6 +173,9 @@ describe("Endpoints solicitudes documentos", () => {
         numeroPaciente: {
           numero: 123,
           codigoEstablecimiento: "E01",
+          hospital: {
+            E01: 1
+          },
           nombreEstablecimiento: "Hospital Regional de Antofagasta",
         },
         correlativoDocumento: "456",
@@ -180,6 +192,9 @@ describe("Endpoints solicitudes documentos", () => {
         numeroPaciente: {
           numero: 123,
           codigoEstablecimiento: "E01",
+          hospital: {
+            E01: 1
+          },
           nombreEstablecimiento: "Hospital Regional de Antofagasta",
         },
         correlativoDocumento: "456",
@@ -230,7 +245,14 @@ describe("Endpoints solicitudes documentos", () => {
       const newSolicitudDocumento = await SolicitudesDocumentos.create({
         correlativoSolicitud: 789,
         anio: 2021,
-        numeroPaciente: 123,
+        numeroPaciente: {
+          numero: 123,
+          codigoEstablecimiento: "E01",
+          hospital: {
+            E01: 1
+          },
+          nombreEstablecimiento: "Hospital Regional de Antofagasta",
+        },
         correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",
@@ -258,7 +280,14 @@ describe("Endpoints solicitudes documentos", () => {
       const newContenidoSolicitud = {
         correlativoSolicitud: 789,
         anio: 2021,
-        numeroPaciente: 123,
+        numeroPaciente: {
+          numero: 123,
+          codigoEstablecimiento: "E01",
+          hospital: {
+            E01: 1
+          },
+          nombreEstablecimiento: "Hospital Regional de Antofagasta",
+        },
         correlativoDocumento: "456",
         tipoDocumento: "DAU",
         estado: "EN_PROCESO",

@@ -26,6 +26,9 @@ const documentoGuardar = {
   numeroPaciente: {
     numero: 1,
     codigoEstablecimiento: "E01",
+    hospital: {
+      E01: 1
+    },
     nombreEstablecimiento: "Hospital Regional de Antofagasta",
   },
   fecha: "2021-07-15",

@@ -7,6 +7,7 @@ const Documentos = mongoose.model(
     numeroPaciente: {
       numero: {type: Number, require: true},
       codigoEstablecimiento: {type: String, require: true},
+      hospital: {},
       nombreEstablecimiento: String,
     },
     fecha: Date,
