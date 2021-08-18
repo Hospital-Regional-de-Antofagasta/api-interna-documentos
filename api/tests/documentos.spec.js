@@ -3,6 +3,7 @@ const app = require("../app");
 const mongoose = require("mongoose");
 const Documentos = require("../models/Documentos");
 const documentosSeed = require("../testSeeds/documentosSeed.json");
+const { deleteOne } = require("../models/Documentos");
 
 const request = supertest(app);
 
@@ -27,7 +28,7 @@ const documentoGuardar = {
     numero: 1,
     codigoEstablecimiento: "E01",
     hospital: {
-      E01: 1
+      E01: 1,
     },
     nombreEstablecimiento: "Hospital Regional de Antofagasta",
   },
@@ -48,6 +49,7 @@ describe("Endpoints documentos", () => {
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
     it("Should create documento", async () => {
+      documentoGuardar.numeroPaciente.hospital = {};
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", token)
@@ -55,6 +57,9 @@ describe("Endpoints documentos", () => {
 
       const documentoObtenido = await Documentos.findOne({
         correlativo: documentoGuardar.correlativo,
+        "numeroPaciente.hospital": {
+          E01: 1,
+        },
       });
 
       expect(response.status).toBe(201);
@@ -73,6 +78,9 @@ describe("Endpoints documentos", () => {
       );
       expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
       expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
+      documentoGuardar.numeroPaciente.hospital = {
+        E01: 1,
+      };
     });
   });
 });
