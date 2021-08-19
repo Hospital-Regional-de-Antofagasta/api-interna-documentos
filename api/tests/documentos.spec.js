@@ -49,7 +49,7 @@ describe("Endpoints documentos", () => {
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
     it("Should create documento", async () => {
-      documentoGuardar.numeroPaciente.hospital = {};
+      delete documentoGuardar.numeroPaciente.hospital;
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", token)
