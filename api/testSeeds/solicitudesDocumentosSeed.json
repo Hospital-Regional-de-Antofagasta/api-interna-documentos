@@ -4,6 +4,7 @@
     "anio": 2021,
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -20,6 +21,7 @@
     "anio": 0,
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -36,6 +38,7 @@
     "anio": 0,
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -52,6 +55,7 @@
     "anio": 0,
     "numeroPaciente": 
       {
+        "idNumero": "E012",
         "numero": 2,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -68,6 +72,7 @@
     "anio": 0,
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {

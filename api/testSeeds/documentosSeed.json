@@ -2,6 +2,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -16,6 +17,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -44,6 +46,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -58,6 +61,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E011",
         "numero": 1,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -72,6 +76,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E012",
         "numero": 2,
         "codigoEstablecimiento": "E01",
               "hospital": {
@@ -86,6 +91,7 @@
   {
     "numeroPaciente": 
       {
+        "idNumero": "E012",
         "numero": 2,
         "codigoEstablecimiento": "E01",
               "hospital": {
