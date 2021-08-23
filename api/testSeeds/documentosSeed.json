@@ -1,104 +1,42 @@
 [
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "fecha": "2021-06-01",
     "correlativo": "1",
     "tipo": "DAU"
   },
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "fecha": "2021-06-08",
     "correlativo": "3",
     "tipo": "DAU"
   },
   {
-    "numeroPaciente": 
-      {
-        "numero": 2,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 2,
     "fecha": "2021-06-07",
     "correlativo": "1",
     "tipo": "DAU"
   },
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "fecha": "2021-06-07",
     "correlativo": "2",
     "tipo": "DAU"
   },
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "fecha": "2021-06-08",
     "correlativo": "1",
     "tipo": "EPICRISIS"
   },
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E012",
-        "numero": 2,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente":2,
     "fecha": "2021-06-08",
     "correlativo": "2",
     "tipo": "EPICRISIS"
   },
   {
-    "numeroPaciente": 
-      {
-        "idNumero": "E012",
-        "numero": 2,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente":2,
     "fecha": "2021-06-06",
     "correlativo": "2",
     "tipo": "DAU"

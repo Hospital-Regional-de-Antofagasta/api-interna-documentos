@@ -5,7 +5,7 @@ const { isAuthenticated } = require("../middleware/auth");
 const router = express.Router();
 
 router.get(
-  "/:codigoEstablecimiento",
+  "/",
   isAuthenticated,
   solicitudesDocumentosController.getSolicitudesDocumentos
 );

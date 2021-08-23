@@ -24,14 +24,7 @@ afterEach(async () => {
 });
 
 const documentoGuardar = {
-  numeroPaciente: {
-    numero: 1,
-    codigoEstablecimiento: "E01",
-    hospital: {
-      E01: 1,
-    },
-    nombreEstablecimiento: "Hospital Regional de Antofagasta",
-  },
+  numeroPaciente: 1,
   fecha: "2021-07-15",
   correlativo: "11",
   tipo: "DAU",
@@ -49,7 +42,6 @@ describe("Endpoints documentos", () => {
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
     it("Should create documento", async () => {
-      delete documentoGuardar.numeroPaciente.hospital;
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", token)
@@ -57,30 +49,18 @@ describe("Endpoints documentos", () => {
 
       const documentoObtenido = await Documentos.findOne({
         correlativo: documentoGuardar.correlativo,
-        "numeroPaciente.hospital": {
-          E01: 1,
-        },
       });
 
       expect(response.status).toBe(201);
 
-      expect(documentoObtenido.numeroPaciente.numero).toBe(
-        documentoGuardar.numeroPaciente.numero
-      );
-      expect(documentoObtenido.numeroPaciente.codigoEstablecimiento).toBe(
-        documentoGuardar.numeroPaciente.codigoEstablecimiento
-      );
-      expect(documentoObtenido.numeroPaciente.nombreEstablecimiento).toBe(
-        documentoGuardar.numeroPaciente.nombreEstablecimiento
+      expect(documentoObtenido.numeroPaciente).toBe(
+        documentoGuardar.numeroPaciente
       );
       expect(Date.parse(documentoObtenido.fecha)).toBe(
         Date.parse(documentoGuardar.fecha)
       );
       expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
       expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
-      documentoGuardar.numeroPaciente.hospital = {
-        E01: 1,
-      };
     });
   });
 });

@@ -2,16 +2,7 @@
   {
     "correlativoSolicitud": 1,
     "anio": 2021,
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "correlativoDocumento": "1",
     "tipoDocumento": "DAU",
     "estado": "REALIZADO"
@@ -19,16 +10,7 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "correlativoDocumento": "2",
     "tipoDocumento": "DAU",
     "estado": "PENDIENTE"
@@ -36,16 +18,7 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "correlativoDocumento": "1",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"
@@ -53,16 +26,7 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 
-      {
-        "idNumero": "E012",
-        "numero": 2,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente":2,
     "correlativoDocumento": "1",
     "tipoDocumento": "DAU",
     "estado": "EN_PROCESO"
@@ -70,16 +34,7 @@
   {
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 
-      {
-        "idNumero": "E011",
-        "numero": 1,
-        "codigoEstablecimiento": "E01",
-              "hospital": {
-                "E01": 1
-              },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 1,
     "correlativoDocumento": "2",
     "tipoDocumento": "EPICRISIS",
     "estado": "PENDIENTE"
