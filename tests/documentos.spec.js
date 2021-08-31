@@ -1,9 +1,9 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const Documentos = require("../models/Documentos");
-const documentosSeed = require("../testSeeds/documentosSeed.json");
-const { deleteOne } = require("../models/Documentos");
+const Documentos = require("../api/models/Documentos");
+const documentosSeed = require("./testSeeds/documentosSeed.json");
+const { deleteOne } = require("../api/models/Documentos");
 
 const request = supertest(app);
 
