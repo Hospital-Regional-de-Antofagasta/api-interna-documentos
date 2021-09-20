@@ -25,6 +25,10 @@ app.use(
   solicitudesDocumentos
 );
 
+app.get("/hradb-a-mongodb/documentos-pacientes/health", (req, res) => {
+  res.status(200).send("ready");
+});
+
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){
     process.exit();
