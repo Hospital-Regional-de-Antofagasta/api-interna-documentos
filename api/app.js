@@ -18,16 +18,16 @@ mongoose.connect(connection, {
   useUnifiedTopology: true,
 });
 
+app.get("/hradb-a-mongodb/documentos-pacientes/health", (req, res) => {
+  res.status(200).send("ready");
+});
+
 app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
 
 app.use(
   "/hradb-a-mongodb/documentos-pacientes/solicitudes",
   solicitudesDocumentos
 );
-
-app.get("/hradb-a-mongodb/documentos-pacientes/health", (req, res) => {
-  res.status(200).send("ready");
-});
 
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){
