@@ -1,9 +1,9 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const Documentos = require("../models/Documentos");
-const documentosSeed = require("../testSeeds/documentosSeed.json");
-const { deleteOne } = require("../models/Documentos");
+const Documentos = require("../api/models/Documentos");
+const documentosSeed = require("./testSeeds/documentosSeed.json");
+const { deleteOne } = require("../api/models/Documentos");
 
 const request = supertest(app);
 
@@ -11,7 +11,7 @@ const token = process.env.HRADB_A_MONGODB_SECRET;
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}documentos_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}/documentos_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
