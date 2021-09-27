@@ -175,7 +175,7 @@ helm {
     }
 
     releases {
-        "api-interna-Documentos" {
+        "api-interna-documentos" {
             from charts.api
 
             forTarget('local') {
