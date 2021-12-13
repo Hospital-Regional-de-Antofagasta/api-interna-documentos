@@ -1,0 +1,47 @@
+[
+  {
+    "correlativo": 10,
+    "identificadorDocumento": "0000000010",
+    "correlativoPaciente": 1,
+    "rutPaciente": "11111111-1",
+    "numeroPaciente": 1,
+    "tipo": "DAU",
+    "fecha": "2021-01-10",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
+    "correlativo": 2,
+    "identificadorDocumento": "0000000022",
+    "correlativoPaciente": 1,
+    "rutPaciente": "11111111-1",
+    "numeroPaciente": 1,
+    "tipo": "DAU",
+    "fecha": "2021-01-02",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
+    "_id": "000000000001",
+    "correlativo": 3,
+    "identificadorDocumento": "0000000033",
+    "correlativoPaciente": 2,
+    "rutPaciente": "22222222-2",
+    "numeroPaciente": 2,
+    "tipo": "DAU",
+    "fecha": "2021-01-03",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
+    "correlativo": 3,
+    "identificadorDocumento": "0000000333",
+    "correlativoPaciente": 2,
+    "rutPaciente": "22222222-2",
+    "numeroPaciente": 2,
+    "tipo": "DAU",
+    "fecha": "2021-01-03",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  }
+]
