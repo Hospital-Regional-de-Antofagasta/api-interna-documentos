@@ -6,9 +6,7 @@ const Documentos = mongoose.model(
   new Schema({
     correlativo: {type: Number, require: true},
     identificadorDocumento: {type: String, require: true},
-    correlativoPaciente: {type: Number, require: true},
     rutPaciente: {type: String, require: true},
-    numeroPaciente: {type: Number, require: true},
     tipo: {type: String, require: true},
     fecha: {type: Date, require: true},
     codigoEstablecimiento: {type: String, require: true},

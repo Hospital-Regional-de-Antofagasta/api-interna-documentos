@@ -14,9 +14,7 @@ const token = process.env.HRADB_A_MONGODB_SECRET;
 const documentoGuardar = {
   correlativo: 9,
   identificadorDocumento: "1511290090",
-  correlativoPaciente: 592245,
   rutPaciente: "15501629-9",
-  numeroPaciente: 4,
   tipo: "DAU",
   fecha: "2015-11-29",
   codigoEstablecimiento: "HRA",
@@ -26,9 +24,7 @@ const documentoGuardar = {
 const documentoActualizar = {
   correlativo: 2,
   identificadorDocumento: "0000000002",
-  correlativoPaciente: 1,
   rutPaciente: "11111111-1",
-  numeroPaciente: 1,
   tipo: "DAU",
   fecha: "2021-01-02",
   codigoEstablecimiento: "HRA",
@@ -108,13 +104,7 @@ describe("Endpoints documentos salida", () => {
       expect(documentoDespues.identificadorDocumento).toBe(
         documentoGuardar.identificadorDocumento
       );
-      expect(documentoDespues.correlativoPaciente).toBe(
-        documentoGuardar.correlativoPaciente
-      );
       expect(documentoDespues.rutPaciente).toBe(documentoGuardar.rutPaciente);
-      expect(documentoDespues.numeroPaciente).toBe(
-        documentoGuardar.numeroPaciente
-      );
       expect(documentoDespues.tipo).toBe(documentoGuardar.tipo);
       expect(Date.parse(documentoDespues.fecha)).toBe(
         Date.parse(documentoGuardar.fecha)
@@ -254,14 +244,8 @@ describe("Endpoints documentos salida", () => {
       expect(documentoDespues.identificadorDocumento).toBe(
         documentoActualizar.identificadorDocumento
       );
-      expect(documentoDespues.correlativoPaciente).toBe(
-        documentoActualizar.correlativoPaciente
-      );
       expect(documentoDespues.rutPaciente).toBe(
         documentoActualizar.rutPaciente
-      );
-      expect(documentoDespues.numeroPaciente).toBe(
-        documentoActualizar.numeroPaciente
       );
       expect(documentoDespues.tipo).toBe(documentoActualizar.tipo);
       expect(Date.parse(documentoDespues.fecha)).toBe(
