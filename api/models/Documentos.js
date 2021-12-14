@@ -3,15 +3,18 @@ const Schema = mongoose.Schema;
 
 const Documentos = mongoose.model(
   "documento",
-  new Schema({
-    correlativo: {type: Number, require: true},
-    identificadorDocumento: {type: String, require: true},
-    rutPaciente: {type: String, require: true},
-    tipo: {type: String, require: true},
-    fecha: {type: Date, require: true},
-    codigoEstablecimiento: {type: String, require: true},
-    nombreEstablecimiento: {type: String, require: true},
-  }),
+  new Schema(
+    {
+      correlativo: { type: Number, require: true },
+      identificadorDocumento: { type: String, require: true },
+      rutPaciente: { type: String, require: true },
+      tipo: { type: String, require: true },
+      fecha: { type: Date, require: true },
+      codigoEstablecimiento: { type: String, require: true },
+      nombreEstablecimiento: { type: String, require: true },
+    },
+    { timestamps: true }
+  ),
   "documentos"
 );
 
