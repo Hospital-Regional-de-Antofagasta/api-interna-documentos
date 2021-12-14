@@ -1,5 +1,5 @@
 const express = require("express");
-const DocumentosEntradaController = require("../controllers/DocumentosEntradaController");
+const documentosEntradaController = require("../controllers/documentosEntradaController");
 const { isAuthenticated } = require("../middleware/auth");
 const { requiredParameters } = require("../middleware/validarDocumento");
 
@@ -9,21 +9,21 @@ router.get(
   "/solicitudes-envio",
   isAuthenticated,
   requiredParameters,
-  DocumentosEntradaController.getSolicitudesEnvio
+  documentosEntradaController.getSolicitudesEnvio
 );
 
 router.put(
   "/solicitudes-envio",
   isAuthenticated,
   requiredParameters,
-  DocumentosEntradaController.updateSolicitudesEnvio
+  documentosEntradaController.updateSolicitudesEnvio
 );
 
 router.delete(
   "/solicitudes-envio",
   isAuthenticated,
   requiredParameters,
-  DocumentosEntradaController.deleteSolicitudesEnvio
+  documentosEntradaController.deleteSolicitudesEnvio
 );
 
 module.exports = router;
