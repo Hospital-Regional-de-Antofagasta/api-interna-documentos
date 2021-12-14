@@ -316,8 +316,6 @@ describe("Endpoints solicitudes documentos", () => {
 
       const { respuesta } = response.body;
 
-      console.log(respuesta)
-
       expect(respuesta).toEqual([
         {
           afectado: "303030303030303030303033",

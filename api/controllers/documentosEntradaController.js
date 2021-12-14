@@ -13,7 +13,6 @@ exports.getSolicitudesEnvio = async (req, res, next) => {
       .exec();
     res.status(200).send(solicitudes);
   } catch (error) {
-    console.log(error);
     res.status(500).send({
       respuesta: `Solicitud documentos get: ${error.name} - ${error.message}`,
     });
