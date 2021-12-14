@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const documentosSalida = require("./routes/documentosSalida");
-// const documentosEntrada = require("./routes/documentosEntrada");
+const documentosEntrada = require("./routes/documentosEntrada");
 
 const app = express();
 app.use(express.json());
@@ -27,8 +27,7 @@ app.get("/inter-mongo-documentos/health", (req, res) => {
 app.use("/inter-mongo-documentos/salida", documentosSalida);
 
 // Desde la nube al hospital
-// app.use("/inter-mongo-documentos/entrada", documentosEntrada);
-
+app.use("/inter-mongo-documentos/entrada", documentosEntrada);
 
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){
