@@ -15,14 +15,12 @@ router.get(
 router.put(
   "/solicitudes-envio",
   isAuthenticated,
-  requiredParameters,
   documentosEntradaController.updateSolicitudesEnvio
 );
 
 router.delete(
   "/solicitudes-envio",
   isAuthenticated,
-  requiredParameters,
   documentosEntradaController.deleteSolicitudesEnvio
 );
 

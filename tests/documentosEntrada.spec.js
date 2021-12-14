@@ -246,22 +246,6 @@ describe("Endpoints solicitudes documentos", () => {
 
       expect(solicitudesAntes).toEqual(solicitudesDespues);
     });
-    it("Should not get solicitudes documentos without codigo establecimiento", async () => {
-      const solicitudesAntes = SolicitudesDocumentos.find().exec();
-
-      const response = await request
-        .put(`/inter-mongo-documentos/entrada/solicitudes-envio`)
-        .set("Authorization", token);
-
-      expect(response.status).toBe(400);
-      expect(response.body.error).toBe(
-        "Se debe enviar el codigo del establecimiento."
-      );
-
-      const solicitudesDespues = SolicitudesDocumentos.find().exec();
-
-      expect(solicitudesAntes).toEqual(solicitudesDespues);
-    });
     it("Should update state of pending solicitud documento", async () => {
       const response = await request
         .put(
@@ -364,22 +348,6 @@ describe("Endpoints solicitudes documentos", () => {
 
       expect(response.status).toBe(401);
       expect(response.body.error).toBe("Acceso no autorizado.");
-
-      const solicitudesDespues = SolicitudesDocumentos.find().exec();
-
-      expect(solicitudesAntes).toEqual(solicitudesDespues);
-    });
-    it("Should not get solicitudes documentos without codigo establecimiento", async () => {
-      const solicitudesAntes = SolicitudesDocumentos.find().exec();
-
-      const response = await request
-        .delete(`/inter-mongo-documentos/entrada/solicitudes-envio`)
-        .set("Authorization", token);
-
-      expect(response.status).toBe(400);
-      expect(response.body.error).toBe(
-        "Se debe enviar el codigo del establecimiento."
-      );
 
       const solicitudesDespues = SolicitudesDocumentos.find().exec();
 
