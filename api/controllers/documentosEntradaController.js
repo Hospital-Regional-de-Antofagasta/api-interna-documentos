@@ -11,7 +11,7 @@ exports.getSolicitudesEnvio = async (req, res, next) => {
       .sort({ createdAt: 1 })
       .limit(100)
       .exec();
-    res.status(200).send(solicitudes);
+    res.status(200).send({ respuesta: solicitudes });
   } catch (error) {
     res.status(500).send({
       respuesta: `Solicitud documentos get: ${error.name} - ${error.message}`,

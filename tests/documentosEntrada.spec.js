@@ -68,7 +68,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body).toEqual([]);
+      expect(response.body).toEqual({ respuesta: [] });
     });
     it("Should get solicitudes documentos from all types", async () => {
       const response = await request
@@ -79,9 +79,11 @@ describe("Endpoints solicitudes documentos", () => {
 
       expect(response.status).toBe(200);
 
-      expect(response.body.length).toBe(7);
+      const { respuesta } = response.body;
 
-      let solicitud = response.body.find(
+      expect(respuesta.length).toBe(7);
+
+      let solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303031"
       );
 
@@ -94,7 +96,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(2021);
       expect(solicitud.estado).toBe("REALIZADO");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303032"
       );
 
@@ -107,7 +109,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(0);
       expect(solicitud.estado).toBe("PENDIENTE");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303033"
       );
 
@@ -120,7 +122,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(0);
       expect(solicitud.estado).toBe("PENDIENTE");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303034"
       );
 
@@ -133,7 +135,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(2021);
       expect(solicitud.estado).toBe("EN_PROCESO");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303035"
       );
 
@@ -146,7 +148,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(0);
       expect(solicitud.estado).toBe("PENDIENTE");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303036"
       );
 
@@ -159,7 +161,7 @@ describe("Endpoints solicitudes documentos", () => {
       expect(solicitud.anio).toBe(0);
       expect(solicitud.estado).toBe("PENDIENTE");
 
-      solicitud = response.body.find(
+      solicitud = respuesta.find(
         (element) => element._id === "303030303030303030303037"
       );
 
@@ -180,7 +182,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body.length).toBe(4);
+      expect(response.body.respuesta.length).toBe(4);
     });
     it("Should get solicitudes documentos in progress", async () => {
       const response = await request
@@ -190,7 +192,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body.length).toBe(2);
+      expect(response.body.respuesta.length).toBe(2);
     });
     it("Should get at most 100 pending solicitudes documentos", async () => {
       await SolicitudesDocumentos.deleteMany();
@@ -202,7 +204,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body.length).toBe(100);
+      expect(response.body.respuesta.length).toBe(100);
     });
     it("Should get at most 100 solicitudes documentos in progress", async () => {
       await SolicitudesDocumentos.deleteMany();
@@ -214,7 +216,7 @@ describe("Endpoints solicitudes documentos", () => {
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
-      expect(response.body.length).toBe(100);
+      expect(response.body.respuesta.length).toBe(100);
     });
   });
   describe("PUT /inter-mongo-documentos/entrada/solicitudes-envio", () => {
