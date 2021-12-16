@@ -298,8 +298,12 @@ describe("Endpoints documentos salida", () => {
   describe("DELETE /inter-mongo-documentos/salida", () => {
     it("Should not delete documento without token", async () => {
       const documentoAntes = await Documentos.findOne({
-        correlativo: 1,
-        codigoEstablecimiento: "HRA",
+        $and: [
+          { correlativo: 1 },
+          {
+            codigoEstablecimiento: "HRA",
+          },
+        ],
       }).exec();
 
       const response = await request
@@ -311,16 +315,24 @@ describe("Endpoints documentos salida", () => {
       expect(response.body.error).toBe("Acceso no autorizado.");
 
       const documentoDespues = await Documentos.findOne({
-        correlativo: 1,
-        codigoEstablecimiento: "HRA",
+        $and: [
+          { correlativo: 1 },
+          {
+            codigoEstablecimiento: "HRA",
+          },
+        ],
       }).exec();
 
       expect(documentoAntes).toEqual(documentoDespues);
     });
     it("Should not delete documento with invalid token", async () => {
       const documentoAntes = await Documentos.findOne({
-        correlativo: 1,
-        codigoEstablecimiento: "HRA",
+        $and: [
+          { correlativo: 1 },
+          {
+            codigoEstablecimiento: "HRA",
+          },
+        ],
       }).exec();
 
       const response = await request
@@ -333,8 +345,12 @@ describe("Endpoints documentos salida", () => {
       expect(response.body.error).toBe("Acceso no autorizado.");
 
       const documentoDespues = await Documentos.findOne({
-        correlativo: 1,
-        codigoEstablecimiento: "HRA",
+        $and: [
+          { correlativo: 1 },
+          {
+            codigoEstablecimiento: "HRA",
+          },
+        ],
       }).exec();
 
       expect(documentoAntes).toEqual(documentoDespues);
@@ -346,8 +362,12 @@ describe("Endpoints documentos salida", () => {
         .send([{ correlativo: 1, codigoEstablecimiento: "HRA" }]);
 
       const documentoDespues = await Documentos.findOne({
-        correlativo: 1,
-        codigoEstablecimiento: "HRA",
+        $and: [
+          { correlativo: 1 },
+          {
+            codigoEstablecimiento: "HRA",
+          },
+        ],
       }).exec();
 
       expect(response.status).toBe(200);
