@@ -126,9 +126,15 @@ exports.deleteMany = async (req, res) => {
     const identificadoresDocumentos = req.body;
     for (let identificadorDocumento of identificadoresDocumentos) {
       try {
-        const documentosMismoIdentificador = await Documentos.find(
-          identificadorDocumento
-        ).exec();
+        const documentosMismoIdentificador = await Documentos.find({
+          $and: [
+            { correlativo: identificadorDocumento.correlativo },
+            {
+              codigoEstablecimiento:
+                identificadorDocumento.codigoEstablecimiento,
+            },
+          ],
+        }).exec();
         // si el documento no existe, reportar el error e indicar que se elimino
         if (documentosMismoIdentificador.length === 0) {
           documentosEliminados.push({
