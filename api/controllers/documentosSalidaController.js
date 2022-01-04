@@ -149,7 +149,7 @@ exports.deleteMany = async (req, res) => {
           documentosEliminados.push({
             afectado: identificadorDocumento.correlativo,
             realizado: false,
-            error: `Existen ${documentosMismoIdentificador.length} documentos con el correlativo ${documento.correlativo} para el establecimiento ${documento.codigoEstablecimiento}.`,
+            error: `Existen ${documentosMismoIdentificador.length} documentos con el correlativo ${identificadorDocumento.correlativo} para el establecimiento ${identificadorDocumento.codigoEstablecimiento}.`,
           });
           continue;
         }
