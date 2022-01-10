@@ -5,6 +5,8 @@ const cors = require("cors");
 
 const documentosSalida = require("./routes/documentosSalida");
 const documentosEntrada = require("./routes/documentosEntrada");
+const documentos = require("./routes/documentosOld");
+const solicitudesDocumentos = require("./routes/solicitudesDocumentosOld");
 
 const app = express();
 app.use(express.json());
@@ -28,6 +30,13 @@ app.use("/inter-mongo-documentos/salida", documentosSalida);
 
 // Desde la nube al hospital
 app.use("/inter-mongo-documentos/entrada", documentosEntrada);
+
+app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
+
+app.use(
+  "/hradb-a-mongodb/documentos-pacientes/solicitudes",
+  solicitudesDocumentos
+);
 
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){

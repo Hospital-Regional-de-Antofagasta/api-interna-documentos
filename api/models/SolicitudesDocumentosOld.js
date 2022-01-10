@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const env = process.env.NODE_ENV;
 
-let db = "hrapp_documentos"
+let db = "hrapp"
 
 if(env==="test") db = `${db}_test`
 
@@ -13,10 +13,6 @@ const SolicitudesDocumentos = conection.model(
   "solicitudes_documentos",
   new Schema(
     {
-      codigoEstablecimiento: { type: String, require: true },
-      rutPaciente: { type: String, require: true },
-      identificadorDocumento: { type: String, require: true },
-      tipoDocumento: { type: String, require: true },
       correlativoSolicitud: {
         type: Number,
         default: 0,
@@ -25,7 +21,11 @@ const SolicitudesDocumentos = conection.model(
         type: Number,
         default: 0,
       },
-      estado: { // Posibles estados: PENDIENTE, EN_PROCESO
+      numeroPaciente: {type: Number, require: true},
+      correlativoDocumento: String,
+      tipoDocumento: String,
+      estado: {
+        // Posibles estados: PENDIENTE, EN_PROCESO
         type: String,
         default: "PENDIENTE",
       },
