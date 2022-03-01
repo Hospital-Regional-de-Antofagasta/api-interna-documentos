@@ -42,7 +42,7 @@ exports.updateSolicitudesEnvio = async (req, res, next) => {
           solicitudesActualizadas.push({
             afectado: solicitud._id,
             realizado: false,
-            error: `Existen ${solicitudAEliminar.length} solicitudes de envío de documento con el identificador ${solicitudes._id}.`,
+            error: `Existen ${solicitudMismoIdentificador.length} solicitudes de envío de documento con el identificador ${solicitudes._id}.`,
           });
           continue;
         }
@@ -102,7 +102,7 @@ exports.deleteSolicitudesEnvio = async (req, res, next) => {
           solicitudesEliminadas.push({
             afectado: idSolicitud,
             realizado: false,
-            error: `Existen ${solicitudAEliminar.length} solicitudes de envío de documento con el identificador ${idSolicitud}.`,
+            error: `Existen ${solicitudMismoIdentificador.length} solicitudes de envío de documento con el identificador ${idSolicitud}.`,
           });
           continue;
         }
