@@ -34,7 +34,7 @@ ingress:
   hosts:
     - host: "apidev.apolosalud.net"
       paths:
-        - path: "/hradb-a-mongodb/documentos-pacientes/*"
+        - path: "/inter-mongo-documentos-pacientes/*"
           pathType: ImplementationSpecific
   tls: []
   #  - secretName: chart-example-tls

@@ -1,25 +1,28 @@
 const supertest = require("supertest");
 const app = require("../api/app");
 const mongoose = require("mongoose");
-const Documentos = require("../api/models/Documentos");
-const documentosSeed = require("./testSeeds/documentosSeed.json");
-const { deleteOne } = require("../api/models/Documentos");
+const Documentos = require("../api/models/DocumentosOld");
+const documentosSeed = require("./testSeeds/documentosOldSeed.json");
 
 const request = supertest(app);
 
 const token = process.env.HRADB_A_MONGODB_SECRET;
 
 beforeEach(async () => {
-  await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI}/documentos_test`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  // await mongoose.disconnect();
+  // await mongoose.connect(`${process.env.MONGO_URI}/documentos_test`, {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  // });
   await Documentos.create(documentosSeed);
 });
 
 afterEach(async () => {
   await Documentos.deleteMany();
+  // await mongoose.disconnect();
+});
+
+afterAll(async () => {
   await mongoose.disconnect();
 });
 

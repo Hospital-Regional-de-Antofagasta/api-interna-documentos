@@ -1,1150 +1,1991 @@
 [
   {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1",
+    "tipoDocumento": "DAU",
     "correlativoSolicitud": 1,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
+    "estado": "REALIZADO"
   },
   {
+    "codigoEstablecimiento": "HC",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
     "estado": "PENDIENTE"
   },
   {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
     "correlativoSolicitud": 0,
     "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1;1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 0,
+    "anio": 0,
+    "estado": "PENDIENTE"
+  },
+  {
+    "codigoEstablecimiento": "HC",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
+    "correlativoSolicitud": 3,
     "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "EPICRISIS",
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 1,
-    "anio": 2021,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
-    "tipoDocumento": "DAU",
-    "respondida": true,
-    "enviadaHospital": false
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "2",
-    "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
-  },
-  {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 1,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
     "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
     "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
   },
   {
-    "correlativoSolicitud": 0,
-    "anio": 0,
-    "numeroPaciente": 2,
-    "correlativoDocumento": "1",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
     "tipoDocumento": "DAU",
-    "estado": "PENDIENTE"
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "3",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 3,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2;21",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 4,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
   }
 ]

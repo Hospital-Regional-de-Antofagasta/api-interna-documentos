@@ -1,4 +1,4 @@
-const SolicitudesDocumentos = require("../models/SolicitudesDocumentos");
+const SolicitudesDocumentos = require("../models/SolicitudesDocumentosOld");
 
 exports.getSolicitudesDocumentos = async (req, res) => {
   try {

@@ -1,6 +1,6 @@
 const express = require("express");
-const documentos = require("../controllers/documentosController");
-const { isAuthenticated } = require("../middleware/auth");
+const documentos = require("../controllers/documentosOldController");
+const { isAuthenticated } = require("../middleware/authOld");
 
 const router = express.Router();
 

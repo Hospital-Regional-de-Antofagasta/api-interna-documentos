@@ -1,6 +1,5 @@
 [
   {
-    "_id": "000000000001",
     "correlativo": 1,
     "identificadorDocumento": "0000000001",
     "rutPaciente": "11111111-1",
@@ -10,7 +9,15 @@
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000002",
+    "correlativo": 13,
+    "identificadorDocumento": "1;13",
+    "rutPaciente": "11111111-1",
+    "tipo": "EPICRISIS",
+    "fecha": "2021-01-01",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
     "correlativo": 2,
     "identificadorDocumento": "0000000002",
     "rutPaciente": "11111111-1",
@@ -20,17 +27,34 @@
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000003",
-    "correlativo": 3,
-    "identificadorDocumento": "0000000003",
-    "rutPaciente": "22222222-2",
+    "correlativo": 14,
+    "identificadorDocumento": "0000000014",
+    "rutPaciente": "11111111-1",
     "tipo": "DAU",
-    "fecha": "2021-01-03",
+    "fecha": "2021-01-02",
     "codigoEstablecimiento": "HRA",
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000004",
+    "_id": "000000000002",
+    "correlativo": 16,
+    "identificadorDocumento": "0000000016",
+    "rutPaciente": "11111111-1",
+    "tipo": "DAU",
+    "fecha": "2021-01-02",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
+    "correlativo": 15,
+    "identificadorDocumento": "0000000015",
+    "rutPaciente": "11111111-1",
+    "tipo": "DAU",
+    "fecha": "2021-01-02",
+    "codigoEstablecimiento": "HRA",
+    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
+  },
+  {
     "correlativo": 4,
     "identificadorDocumento": "0000000004",
     "rutPaciente": "11111111-1",
@@ -38,45 +62,5 @@
     "fecha": "2021-01-04",
     "codigoEstablecimiento": "HRA",
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
-  },
-  {
-    "_id": "000000000005",
-    "correlativo": 5,
-    "identificadorDocumento": "1;1",
-    "rutPaciente": "11111111-1",
-    "tipo": "EPICRISIS",
-    "fecha": "2021-01-05",
-    "codigoEstablecimiento": "HRA",
-    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
-  },
-  {
-    "_id": "000000000006",
-    "correlativo": 6,
-    "identificadorDocumento": "2;1",
-    "rutPaciente": "22222222-2",
-    "tipo": "EPICRISIS",
-    "fecha": "2021-01-06",
-    "codigoEstablecimiento": "HRA",
-    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
-  },
-  {
-    "_id": "000000000007",
-    "correlativo": 7,
-    "identificadorDocumento": "0000000007",
-    "rutPaciente": "22222222-2",
-    "tipo": "DAU",
-    "fecha": "2021-01-07",
-    "codigoEstablecimiento": "HRA",
-    "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
-  },
-  {
-    "_id": "000000000008",
-    "correlativo": 8,
-    "identificadorDocumento": "0000000008",
-    "rutPaciente": "22222222-2",
-    "tipo": "DAU",
-    "fecha": "2021-01-07",
-    "codigoEstablecimiento": "HC",
-    "nombreEstablecimiento": "Hospital de Calama"
   }
 ]

@@ -1,6 +1,6 @@
 const express = require("express");
-const solicitudesDocumentosController = require("../controllers/solicitudesDocumentosController");
-const { isAuthenticated } = require("../middleware/auth");
+const solicitudesDocumentosController = require("../controllers/solicitudesDocumentosOldController");
+const { isAuthenticated } = require("../middleware/authOld");
 
 const router = express.Router();
 

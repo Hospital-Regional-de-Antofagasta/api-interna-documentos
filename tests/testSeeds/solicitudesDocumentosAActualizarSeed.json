@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "303030303030303030303033",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "1",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 13,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "_id": "303030303030303030303131",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 14,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "_id": "303030303030303030303035",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "11111111-1",
+    "identificadorDocumento": "2",
+    "tipoDocumento": "EPICRISIS",
+    "correlativoSolicitud": 14,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  },
+  {
+    "_id": "303030303030303030303036",
+    "codigoEstablecimiento": "HRA",
+    "rutPaciente": "33333333-3",
+    "identificadorDocumento": "456",
+    "tipoDocumento": "DAU",
+    "correlativoSolicitud": 15,
+    "anio": 2021,
+    "estado": "EN_PROCESO"
+  }
+]

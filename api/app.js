@@ -2,8 +2,11 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const documentos = require("./routes/documentos");
-const solicitudesDocumentos = require("./routes/solicitudesDocumentos");
+
+const documentosSalida = require("./routes/documentosSalida");
+const documentosEntrada = require("./routes/documentosEntrada");
+const documentos = require("./routes/documentosOld");
+const solicitudesDocumentos = require("./routes/solicitudesDocumentosOld");
 
 const app = express();
 app.use(express.json());
@@ -18,9 +21,15 @@ mongoose.connect(connection, {
   useUnifiedTopology: true,
 });
 
-app.get("/hradb-a-mongodb/documentos-pacientes/health", (req, res) => {
+app.get("/inter-mongo-documentos/health", (req, res) => {
   res.status(200).send("ready");
 });
+
+// Desde el hospital a la nube
+app.use("/inter-mongo-documentos/salida", documentosSalida);
+
+// Desde la nube al hospital
+app.use("/inter-mongo-documentos/entrada", documentosEntrada);
 
 app.use("/hradb-a-mongodb/documentos-pacientes", documentos);
 
