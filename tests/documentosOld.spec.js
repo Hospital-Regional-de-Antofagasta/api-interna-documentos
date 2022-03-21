@@ -72,7 +72,7 @@ describe("Endpoints documentos", () => {
         .send([documentoGuardar]);
 
       const documentoObtenido = await Documentos.findOne({
-        correlativo: documentoGuardar.correlativo,
+        correlativo: documentoGuardar.correlativo
       });
 
       expect(response.status).toBe(201);

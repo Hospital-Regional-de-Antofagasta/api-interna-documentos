@@ -7,7 +7,7 @@ exports.create = async (req, res) => {
       return res.sendStatus(400);
     }
     for (let documento of documentos) {
-      const documentoBD = await Documentos.find({
+      const documentoBD = await Documentos.findOne({
         correlativo: documento.correlativo,
         tipo: documento.tipo,
       }).exec();
