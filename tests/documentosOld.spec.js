@@ -44,27 +44,27 @@ describe("Endpoints documentos", () => {
       expect(response.status).toBe(401);
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
     });
-    it("Should create documento", async () => {
-      const response = await request
-        .post("/hradb-a-mongodb/documentos-pacientes")
-        .set("Authorization", token)
-        .send(documentoGuardar);
+    // it("Should create documento", async () => {
+    //   const response = await request
+    //     .post("/hradb-a-mongodb/documentos-pacientes")
+    //     .set("Authorization", token)
+    //     .send(documentoGuardar);
 
-      const documentoObtenido = await Documentos.findOne({
-        correlativo: documentoGuardar.correlativo,
-      });
+    //   const documentoObtenido = await Documentos.findOne({
+    //     correlativo: documentoGuardar.correlativo,
+    //   });
 
-      expect(response.status).toBe(201);
+    //   expect(response.status).toBe(201);
 
-      expect(documentoObtenido.numeroPaciente).toBe(
-        documentoGuardar.numeroPaciente
-      );
-      expect(Date.parse(documentoObtenido.fecha)).toBe(
-        Date.parse(documentoGuardar.fecha)
-      );
-      expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
-      expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
-    });
+    //   expect(documentoObtenido.numeroPaciente).toBe(
+    //     documentoGuardar.numeroPaciente
+    //   );
+    //   expect(Date.parse(documentoObtenido.fecha)).toBe(
+    //     Date.parse(documentoGuardar.fecha)
+    //   );
+    //   expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
+    //   expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
+    // });
     it("Should create documentos", async () => {
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes")
@@ -92,12 +92,12 @@ describe("Endpoints documentos", () => {
       const response = await request
         .post("/hradb-a-mongodb/documentos-pacientes")
         .set("Authorization", token)
-        .send({
+        .send([{
           numeroPaciente: 1,
           fecha: "2021-06-07",
           correlativo: "1",
           tipo: "DAU",
-        });
+        }]);
 
       expect(response.status).toBe(201);
 
