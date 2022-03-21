@@ -16,10 +16,14 @@ const connection = process.env.MONGO_URI
 const port = process.env.PORT
 const localhost = process.env.HOSTNAME
 
-mongoose.connect(connection, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+try {
+  mongoose.connect(connection, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+} catch (error) {
+  console.error(`error: ${error.name} - ${error.message}`)
+}
 
 app.get("/inter-mongo-documentos/health", (req, res) => {
   res.status(200).send("ready");
