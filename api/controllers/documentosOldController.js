@@ -9,10 +9,13 @@ exports.create = async (req, res) => {
       console.log("Documentos old create finish");
       return res.sendStatus(201);
     }
+    console.log("Tipo documentos", documentos[0].tipo);
     const filter = documentos[0].tipo === "DAU" ? "DAU" : "EPICRISIS";
     const documentosBD = await Documentos.find({ filter }).exec();
 
+    const cont = 0;
     for (let documento of documentos) {
+      console.log("Cantidad doccumentos revisados", cont)
       if (
         !documentosBD.find(
           (documentoBD) =>
