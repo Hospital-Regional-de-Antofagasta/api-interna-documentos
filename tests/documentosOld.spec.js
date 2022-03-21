@@ -65,56 +65,56 @@ describe("Endpoints documentos", () => {
     //   expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
     //   expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
     // });
-    // it("Should create documentos", async () => {
-    //   const response = await request
-    //     .post("/hradb-a-mongodb/documentos-pacientes")
-    //     .set("Authorization", token)
-    //     .send([documentoGuardar]);
+    it("Should create documentos", async () => {
+      const response = await request
+        .post("/hradb-a-mongodb/documentos-pacientes")
+        .set("Authorization", token)
+        .send([documentoGuardar]);
 
-    //   const documentoObtenido = await Documentos.findOne({
-    //     correlativo: documentoGuardar.correlativo,
-    //   });
+      const documentoObtenido = await Documentos.findOne({
+        correlativo: documentoGuardar.correlativo,
+      });
 
-    //   expect(response.status).toBe(201);
+      expect(response.status).toBe(201);
 
-    //   expect(documentoObtenido.numeroPaciente).toBe(
-    //     documentoGuardar.numeroPaciente
-    //   );
-    //   expect(Date.parse(documentoObtenido.fecha)).toBe(
-    //     Date.parse(documentoGuardar.fecha)
-    //   );
-    //   expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
-    //   expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
-    // });
-    // it("Should not create documento existente", async () => {
-    //   const documentosAntes = await Documentos.find().exec();
+      expect(documentoObtenido.numeroPaciente).toBe(
+        documentoGuardar.numeroPaciente
+      );
+      expect(Date.parse(documentoObtenido.fecha)).toBe(
+        Date.parse(documentoGuardar.fecha)
+      );
+      expect(documentoObtenido.correlativo).toBe(documentoGuardar.correlativo);
+      expect(documentoObtenido.tipo).toBe(documentoGuardar.tipo);
+    });
+    it("Should not create documento existente", async () => {
+      const documentosAntes = await Documentos.find().exec();
 
-    //   const response = await request
-    //     .post("/hradb-a-mongodb/documentos-pacientes")
-    //     .set("Authorization", token)
-    //     .send([{
-    //       numeroPaciente: 1,
-    //       fecha: "2021-06-07",
-    //       correlativo: "1",
-    //       tipo: "DAU",
-    //     }]);
+      const response = await request
+        .post("/hradb-a-mongodb/documentos-pacientes")
+        .set("Authorization", token)
+        .send([{
+          numeroPaciente: 1,
+          fecha: "2021-06-07",
+          correlativo: "1",
+          tipo: "DAU",
+        }]);
 
-    //   expect(response.status).toBe(201);
+      expect(response.status).toBe(201);
 
-    //   const documentosDespues = await Documentos.find().exec();
+      const documentosDespues = await Documentos.find().exec();
 
-    //   expect(documentosAntes.length).toBe(documentosDespues.length);
+      expect(documentosAntes.length).toBe(documentosDespues.length);
 
-    //   const documentoObtenido = await Documentos.findOne({
-    //     correlativo: "1",
-    //   });
+      const documentoObtenido = await Documentos.findOne({
+        correlativo: "1",
+      });
 
-    //   expect(documentoObtenido.numeroPaciente).toBe(1);
-    //   expect(Date.parse(documentoObtenido.fecha)).toBe(
-    //     Date.parse("2021-06-01")
-    //   );
-    //   expect(documentoObtenido.correlativo).toBe("1");
-    //   expect(documentoObtenido.tipo).toBe("DAU");
-    // });
+      expect(documentoObtenido.numeroPaciente).toBe(1);
+      expect(Date.parse(documentoObtenido.fecha)).toBe(
+        Date.parse("2021-06-01")
+      );
+      expect(documentoObtenido.correlativo).toBe("1");
+      expect(documentoObtenido.tipo).toBe("DAU");
+    });
   });
 });
