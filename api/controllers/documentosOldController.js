@@ -16,6 +16,7 @@ exports.create = async (req, res) => {
     const cont = 0;
     for (let documento of documentos) {
       console.log("Cantidad doccumentos revisados", cont)
+      cont ++;
       if (
         !documentosBD.find(
           (documentoBD) =>
