@@ -13,9 +13,9 @@ exports.create = async (req, res) => {
     const filter = documentos[0].tipo === "DAU" ? "DAU" : "EPICRISIS";
     const documentosBD = await Documentos.find({ filter }).exec();
 
-    const cont = 0;
+    let cont = 1;
     for (let documento of documentos) {
-      console.log("Cantidad doccumentos revisados", cont)
+      console.log("Cantidad documentos revisados", cont)
       cont ++;
       if (
         !documentosBD.find(
