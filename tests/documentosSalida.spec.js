@@ -32,20 +32,16 @@ const documentoActualizar = {
 };
 
 beforeEach(async () => {
-  // await mongoose.disconnect();
-  // await mongoose.connect(`${process.env.MONGO_URI}/documentos_salida_test`, {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  // });
+  await mongoose.disconnect();
+  await mongoose.connect(`${process.env.MONGO_URI}/documentos_salida_test`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
   await Documentos.create(documentosSeed);
 });
 
 afterEach(async () => {
   await Documentos.deleteMany();
-  // await mongoose.disconnect();
-});
-
-afterAll(async () => {
   await mongoose.disconnect();
 });
 
@@ -160,7 +156,7 @@ describe("Endpoints documentos salida", () => {
           afectado: 16,
           realizado: false,
           error:
-            "MongoServerError - E11000 duplicate key error collection: hrapp_documentos_test.documentos index: _id_ dup key: { _id: ObjectId('303030303030303030303032') }",
+            "MongoServerError - E11000 duplicate key error collection: documentos_salida_test.documentos index: _id_ dup key: { _id: ObjectId('303030303030303030303032') }",
         },
         {
           afectado: 15,

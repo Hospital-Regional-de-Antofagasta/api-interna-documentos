@@ -11,23 +11,19 @@ const request = supertest(app);
 const token = process.env.HRADB_A_MONGODB_SECRET;
 
 beforeEach(async () => {
-  // await mongoose.disconnect();
-  // await mongoose.connect(
-  //   `${process.env.MONGO_URI}/solicitudes_documentos_test`,
-  //   {
-  //     useNewUrlParser: true,
-  //     useUnifiedTopology: true,
-  //   }
-  // );
+  await mongoose.disconnect();
+  await mongoose.connect(
+    `${process.env.MONGO_URI}/solicitudes_documentos_test`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  );
   await SolicitudesDocumentos.create(solicitudesDocumentosSeed);
 });
 
 afterEach(async () => {
   await SolicitudesDocumentos.deleteMany();
-  // await mongoose.disconnect();
-});
-
-afterAll(async () => {
   await mongoose.disconnect();
 });
 
